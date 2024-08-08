@@ -64,5 +64,9 @@ const ch = [
 //2. Is there at least one character with blue eyes?
 //3. Is there at least one character taller than 210?
 //4. Is there at least one character that has mass less than 50?
-const n= ch.map(pr=>pr.name);
-console.log(n);
+
+
+//const n= ch.map(pr=>pr.name);
+//console.log(n);
+const h= ch.map(hi=>hi.height);
+console.log(h);
