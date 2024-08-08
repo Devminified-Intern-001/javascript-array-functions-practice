@@ -68,5 +68,8 @@ const ch = [
 
 //const n= ch.map(pr=>pr.name);
 //console.log(n);
-const h= ch.map(hi=>hi.height);
-console.log(h);
+//const h= ch.map(hi=>hi.height);
+//console.log(h);
+const nh= ch.map(nah=>nah.name,
+    && nah.height);
+console.log(nh);
