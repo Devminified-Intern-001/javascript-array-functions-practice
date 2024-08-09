@@ -64,7 +64,7 @@ const ch = [
 //2. Is there at least one character with blue eyes?
 //3. Is there at least one character taller than 210?
 //4. Is there at least one character that has mass less than 50?
-
+console.log(" MAP ");
 
 let nameofarry = ch.map(function(element){
     return (element.name);
@@ -85,9 +85,9 @@ let fnameofarry = ch.map(function(element){
     return (element.name.split(' ')[0]);
 })
 console.log(fnameofarry);
-
-console.log("reduce");
-
+console.log("  ");
+console.log("Reduce");
+console.log("  ");
 //Reduce//
 const totalmas =ch.reduce((pre , cur)=> pre + cur.mass, 0);
 
@@ -104,7 +104,14 @@ const totalnam =ch.reduce((pre , cur)=> pre + cur.name.length , 0);
 
 console.log("total ch name",totalnam);
 
+console.log(" ");
+console.log(" FILTER ");
+console.log(" ");
 
+let fill=ch.filter(function(us){
+    return (us.mass > 100);
+});
+console.log(fill);
 // let totalhig = 0;
 // ch.reduce(ch=>{
 //     totalhig += ch.height;
