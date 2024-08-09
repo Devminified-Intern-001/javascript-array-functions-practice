@@ -80,3 +80,39 @@ let nameandheight = ch.map(function(element){
     return [element.name,element.height].join(" ");
 })
 console.log(nameandheight);
+
+let fnameofarry = ch.map(function(element){
+    return (element.name.split(' ')[0]);
+})
+console.log(fnameofarry);
+
+console.log("reduce");
+
+//Reduce//
+const totalmas =ch.reduce((pre , cur)=> pre + cur.mass, 0);
+
+console.log("total mass",totalmas);
+const totalhig =ch.reduce((pre , cur)=> pre + cur.height, 0);
+
+console.log("total height",totalhig);
+
+const totaleye =ch.reduce((pre , cur)=> pre + cur.eye_color + " ", " ");
+
+console.log("total eye",totaleye);
+
+const totalnam =ch.reduce((pre , cur)=> pre + cur.name.length , 0);
+
+console.log("total ch name",totalnam);
+
+
+// let totalhig = 0;
+// ch.reduce(ch=>{
+//     totalhig += ch.height;
+// })
+// console.log("total height",totalhig);
+
+// let totaleye = "";
+// ch.reduce(ch=>{
+//     totaleye += ch.eye_color;
+// })
+// console.log("total eye",totaleye);
