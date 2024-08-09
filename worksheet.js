@@ -108,10 +108,29 @@ console.log(" ");
 console.log(" FILTER ");
 console.log(" ");
 
-let fill=ch.filter(function(us){
+let mas=ch.filter(function(us){
     return (us.mass > 100);
 });
-console.log(fill);
+let a = mas.map(function(sa){
+return (sa.mass)
+})
+console.log(a);
+
+let he=ch.filter(function(us){
+    return (us.height < 200);
+});
+let b = he.map(function(sa){
+return (sa.height)
+})
+console.log(b);
+
+let gen=ch.filter(function(ge){
+    return (ge.gender);
+});
+ let ge=gen.map(function(g){
+     return (g.gender);
+ });
+ console.log(ge);
 // let totalhig = 0;
 // ch.reduce(ch=>{
 //     totalhig += ch.height;
