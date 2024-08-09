@@ -66,10 +66,17 @@ const ch = [
 //4. Is there at least one character that has mass less than 50?
 
 
-//const n= ch.map(pr=>pr.name);
-//console.log(n);
-//const h= ch.map(hi=>hi.height);
-//console.log(h);
-const nh= ch.map(nah=>nah.name,
-    && nah.height);
-console.log(nh);
+let nameofarry = ch.map(function(element){
+    return (element.name);
+})
+console.log(nameofarry);
+
+let heightofarry = ch.map(function(element){
+    return (element.height);
+})
+console.log(heightofarry);
+
+let nameandheight = ch.map(function(element){
+    return [element.name,element.height].join(" ");
+})
+console.log(nameandheight);
