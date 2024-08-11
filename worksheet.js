@@ -124,13 +124,26 @@ return (sa.height)
 })
 console.log(b);
 
-let gen=ch.filter(function(ge){
-    return (ge.gender);
+let maleChr = ch.filter(chr => chr.gender === 'male');
+let maleCh =maleChr.filter(function(m){
+    return (m.gender)
 });
- let ge=gen.map(function(g){
-     return (g.gender);
- });
- console.log(ge);
+console.log(maleCh);
+let faleChr = ch.filter(chr => chr.gender === 'female');
+console.log(faleChr);
+
+let shm = ch.sort((a, b) => a.mass - b.mass);
+console.log(shm);
+
+let sh= ch.sort((a, b) => a.height - b.height);
+console.log(sh);
+
+let shn = ch.sort((a, b) => a.name - b.name);
+console.log(shn);
+
+let shg = ch.sort((a, b) => a.gender - b.gender);
+console.log(shg);
+
 // let totalhig = 0;
 // ch.reduce(ch=>{
 //     totalhig += ch.height;
