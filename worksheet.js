@@ -64,86 +64,90 @@ const ch = [
 //2. Is there at least one character with blue eyes?
 //3. Is there at least one character taller than 210?
 //4. Is there at least one character that has mass less than 50?
-console.log(" MAP ");
+// console.log(" MAP ");
 
-let nameofarry = ch.map(function(element){
-    return (element.name);
-})
-console.log(nameofarry);
+// let nameofarry = ch.map(function(element){
+//     return (element.name);
+// })
+// console.log(nameofarry);
 
-let heightofarry = ch.map(function(element){
-    return (element.height);
-})
-console.log(heightofarry);
+// let heightofarry = ch.map(function(element){
+//     return (element.height);
+// })
+// console.log(heightofarry);
 
-let nameandheight = ch.map(function(element){
-    return [element.name,element.height].join(" ");
-})
-console.log(nameandheight);
+// let nameandheight = ch.map(function(element){
+//     return [element.name,element.height].join(" ");
+// })
+// console.log(nameandheight);
 
-let fnameofarry = ch.map(function(element){
-    return (element.name.split(' ')[0]);
-})
-console.log(fnameofarry);
-console.log("  ");
-console.log("Reduce");
-console.log("  ");
-//Reduce//
-const totalmas =ch.reduce((pre , cur)=> pre + cur.mass, 0);
+// let fnameofarry = ch.map(function(element){
+//     return (element.name.split(' ')[0]);
+// })
+// console.log(fnameofarry);
+// console.log("  ");
+// console.log("Reduce");
+// console.log("  ");
+// //Reduce//
+// const totalmas =ch.reduce((pre , cur)=> pre + cur.mass, 0);
 
-console.log("total mass",totalmas);
-const totalhig =ch.reduce((pre , cur)=> pre + cur.height, 0);
+// console.log("total mass",totalmas);
+// const totalhig =ch.reduce((pre , cur)=> pre + cur.height, 0);
 
-console.log("total height",totalhig);
+// console.log("total height",totalhig);
 
-const totaleye =ch.reduce((pre , cur)=> pre + cur.eye_color + " ", " ");
+// const totaleye =ch.reduce((pre , cur)=> pre + cur.eye_color + " ", " ");
 
-console.log("total eye",totaleye);
+// console.log("total eye",totaleye);
 
-const totalnam =ch.reduce((pre , cur)=> pre + cur.name.length , 0);
+// const totalnam =ch.reduce((pre , cur)=> pre + cur.name.length , 0);
 
-console.log("total ch name",totalnam);
+// console.log("total ch name",totalnam);
 
-console.log(" ");
-console.log(" FILTER ");
-console.log(" ");
+// console.log(" ");
+// console.log(" FILTER ");
+// console.log(" ");
 
-let mas=ch.filter(function(us){
-    return (us.mass > 100);
-});
-let a = mas.map(function(sa){
-return (sa.mass)
-})
-console.log(a);
+// let mas=ch.filter(function(us){
+//     return (us.mass > 100);
+// });
+// let a = mas.map(function(sa){
+// return (sa.mass)
+// })
+// console.log(a);
 
-let he=ch.filter(function(us){
-    return (us.height < 200);
-});
-let b = he.map(function(sa){
-return (sa.height)
-})
-console.log(b);
+// let he=ch.filter(function(us){
+//     return (us.height < 200);
+// });
+// let b = he.map(function(sa){
+// return (sa.height)
+// })
+// console.log(b);
 
-let maleChr = ch.filter(chr => chr.gender === 'male');
-let maleCh =maleChr.filter(function(m){
-    return (m.gender)
-});
-console.log(maleCh);
-let faleChr = ch.filter(chr => chr.gender === 'female');
-console.log(faleChr);
+// let maleChr = ch.filter(chr => chr.gender === 'male');
+// let maleCh =maleChr.filter(function(m){
+//     return (m.gender)
+// });
+// console.log(maleCh);
+// let faleChr = ch.filter(chr => chr.gender === 'female');
+// console.log(faleChr);
 
-let shm = ch.sort((a, b) => a.mass - b.mass);
-console.log(shm);
+// let shm = ch.sort((a, b) => a.mass - b.mass);
+// console.log(shm);
 
-let sh= ch.sort((a, b) => a.height - b.height);
-console.log(sh);
+// let sh= ch.sort((a, b) => a.height - b.height);
+// console.log(sh);
 
-let shn = ch.sort((a, b) => a.name - b.name);
-console.log(shn);
+// let shn = ch.sort((a, b) => a.name - b.name);
+// console.log(shn);
 
-let shg = ch.sort((a, b) => a.gender - b.gender);
-console.log(shg);
-
+// let shg = ch.sort((a, b) => a.gender - b.gender);
+// console.log(shg);
+// let ar =ch.some((df) =>{
+//     return(df ==='male');
+// }
+// );
+// console.log(ar);
 // let totalhig = 0;
 // ch.reduce(ch=>{
 //     totalhig += ch.height;
@@ -155,3 +159,19 @@ console.log(shg);
 //     totaleye += ch.eye_color;
 // })
 // console.log("total eye",totaleye);
+let array = [37, 55, 666, 34, 22];
+async function test() {
+    console.log("1st message");
+        return (array);
+    };
+    async function arrw() {
+    const arr = await test();
+    console.log(arr);
+    console.log("2nd message");
+
+}
+console.log("3rd message");
+let b = test();
+console.log("4th message");
+console.log(b);
+arrw();
